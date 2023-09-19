@@ -1,1 +1,1 @@
-{"version":1,"defects":{"ActionTest::testSum":3,"ActionTest::testCall":3,"ActionTest::testCall_1":3,"DataResultTest::testArrData":5},"times":{"ActionTest::testSum":0.003,"ActionTest::testCall":0,"ActionTest::testCall_1":0,"DataResultTest::testArrData":0}}
+{"version":1,"defects":[],"times":{"ActionTest::testSum":0.002}}

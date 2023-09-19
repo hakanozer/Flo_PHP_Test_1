@@ -2,8 +2,35 @@
 
 class Product
 {
+    private int $pid;
     private string $title;
-    private int $price;
+
+    /**
+     * @param int $pid
+     * @param string $title
+     */
+    public function __construct(int $pid, string $title)
+    {
+        $this->pid = $pid;
+        $this->title = $title;
+    }
+
+
+    /**
+     * @return int
+     */
+    public function getPid(): int
+    {
+        return $this->pid;
+    }
+
+    /**
+     * @param int $pid
+     */
+    public function setPid(int $pid): void
+    {
+        $this->pid = $pid;
+    }
 
     /**
      * @return string
@@ -20,22 +47,5 @@ class Product
     {
         $this->title = $title;
     }
-
-    /**
-     * @return int
-     */
-    public function getPrice(): int
-    {
-        return $this->price;
-    }
-
-    /**
-     * @param int $price
-     */
-    public function setPrice(int $price): void
-    {
-        $this->price = $price;
-    }
-
 
 }

@@ -3,7 +3,18 @@
 class User
 {
     private string $name;
-    private string $surname;
+    private string $email;
+
+    /**
+     * @param string $name
+     * @param string $email
+     */
+    public function __construct(string $name, string $email)
+    {
+        $this->name = $name;
+        $this->email = $email;
+    }
+
 
     /**
      * @return string
@@ -24,19 +35,18 @@ class User
     /**
      * @return string
      */
-    public function getSurname(): string
+    public function getEmail(): string
     {
-        return $this->surname;
+        return $this->email;
     }
 
     /**
-     * @param string $surname
+     * @param string $email
      */
-    public function setSurname(string $surname): void
+    public function setEmail(string $email): void
     {
-        $this->surname = $surname;
+        $this->email = $email;
     }
-
 
 
 }

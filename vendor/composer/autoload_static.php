@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit54fa4a58ebd2c58b29df195e7bf6b9cd
+class ComposerStaticInit65011dfe3caf1b1dc9f8209d572d0d1e
 {
     public static $files = array (
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
@@ -461,8 +461,7 @@ class ComposerStaticInit54fa4a58ebd2c58b29df195e7bf6b9cd
         'PharIo\\Version\\VersionConstraintParser' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintParser.php',
         'PharIo\\Version\\VersionConstraintValue' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintValue.php',
         'PharIo\\Version\\VersionNumber' => __DIR__ . '/..' . '/phar-io/version/src/VersionNumber.php',
-        'Product' => __DIR__ . '/../..' . '/src/Models/Product.php',
-        'ResultData' => __DIR__ . '/../..' . '/src/ResultData.php',
+        'Product' => __DIR__ . '/../..' . '/src/models/Product.php',
         'SebastianBergmann\\CliParser\\AmbiguousOptionException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php',
         'SebastianBergmann\\CliParser\\Exception' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/Exception.php',
         'SebastianBergmann\\CliParser\\OptionDoesNotAllowArgumentException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php',
@@ -671,15 +670,15 @@ class ComposerStaticInit54fa4a58ebd2c58b29df195e7bf6b9cd
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
-        'User' => __DIR__ . '/../..' . '/src/Models/User.php',
+        'User' => __DIR__ . '/../..' . '/src/models/User.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit54fa4a58ebd2c58b29df195e7bf6b9cd::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit54fa4a58ebd2c58b29df195e7bf6b9cd::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit54fa4a58ebd2c58b29df195e7bf6b9cd::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit65011dfe3caf1b1dc9f8209d572d0d1e::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit65011dfe3caf1b1dc9f8209d572d0d1e::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit65011dfe3caf1b1dc9f8209d572d0d1e::$classMap;
 
         }, null, ClassLoader::class);
     }
