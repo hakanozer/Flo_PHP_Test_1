@@ -41,6 +41,11 @@ class ComposerStaticInit65011dfe3caf1b1dc9f8209d572d0d1e
     public static $classMap = array (
         'Action' => __DIR__ . '/../..' . '/src/Action.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Database' => __DIR__ . '/../..' . '/src/Database.php',
+        'Food' => __DIR__ . '/../..' . '/src/Models/Food.php',
+        'INote' => __DIR__ . '/../..' . '/src/repositories/INote.php',
+        'Note' => __DIR__ . '/../..' . '/src/Models/Note.php',
+        'NoteService' => __DIR__ . '/../..' . '/src/services/NoteService.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
@@ -461,7 +466,7 @@ class ComposerStaticInit65011dfe3caf1b1dc9f8209d572d0d1e
         'PharIo\\Version\\VersionConstraintParser' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintParser.php',
         'PharIo\\Version\\VersionConstraintValue' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintValue.php',
         'PharIo\\Version\\VersionNumber' => __DIR__ . '/..' . '/phar-io/version/src/VersionNumber.php',
-        'Product' => __DIR__ . '/../..' . '/src/models/Product.php',
+        'Product' => __DIR__ . '/../..' . '/src/Models/Product.php',
         'SebastianBergmann\\CliParser\\AmbiguousOptionException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php',
         'SebastianBergmann\\CliParser\\Exception' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/Exception.php',
         'SebastianBergmann\\CliParser\\OptionDoesNotAllowArgumentException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php',
@@ -670,7 +675,7 @@ class ComposerStaticInit65011dfe3caf1b1dc9f8209d572d0d1e
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
-        'User' => __DIR__ . '/../..' . '/src/models/User.php',
+        'User' => __DIR__ . '/../..' . '/src/Models/User.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

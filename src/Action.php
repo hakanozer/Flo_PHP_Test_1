@@ -65,6 +65,21 @@ class Action
         $i = $num1 / $num2;
     }
 
+    public function xmlResult() {
+        $url = 'https://www.w3schools.com/xml/simple.xml';
+        $xml = simplexml_load_file($url);
+        $arr = array();
+        foreach ($xml->food as $item) {
+            $food = new Food(
+                $item->name,
+                $item->price,
+                $item->description,
+                $item->calories
+            );
+            $arr[] = $food;
+        }
+        return $arr;
+    }
 
 
 }

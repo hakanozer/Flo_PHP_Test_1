@@ -113,6 +113,51 @@ class ActionTest extends TestCase
     }
 
 
+    // json file content control
+    public function testJsonContentControl() {
+        $path = '../datas/data.json';
+        $this->assertJsonStringEqualsJsonFile($path, json_encode(['id' => 100, 'name' => 'Mehmet Bilsi']));
+    }
+
+    // null control
+    public function testNullControl() {
+        $obj = new Action();
+        $arr = $obj->resultArr();
+        $this->assertNotNull($arr);
+        $user = $arr[0];
+        $this->assertObjectHasProperty('email', $user);
+        $this->assertEquals($user->getEmail(), 'erkan@mail.com');
+    }
+
+    // file content control
+    public function testFileContentControl() {
+        $path = '../logs/sample.txt';
+        $this->assertIsReadable($path);
+        $this->assertStringEqualsFile($path, "this line");
+    }
+
+    // xml file content control
+    public function testXmlFileContentControl() {
+        $path = '../datas/data.xml';
+        $this->assertXmlStringEqualsXmlFile($path, '<items><item><title>TV</title><price>10000</price></item></items>');
+    }
+
+
+    // xml url content control
+    public function testXmlUrlContentControl() {
+        $obj = new Action();
+        $arr = $obj->xmlResult();
+        $this->assertIsArray($arr);
+        $this->assertCount(5, $arr);
+        $this->assertGreaterThan(4, count($arr));
+
+        $this->assertInstanceOf(Food::class, $arr[0]);
+        $food = $arr[0];
+        $title = $food->getName();
+        $this->assertNotNull($title, 'Xml Food Title Null Problem');
+        $this->assertEquals('Belgian Waffles', $title);
+    }
+
     /**
      * @after
      */
